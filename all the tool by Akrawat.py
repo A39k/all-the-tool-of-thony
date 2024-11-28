@@ -42,5 +42,11 @@ canvas = tk.Canvas(tab_basic, width=200, height=100, bg="white")
 canvas.create_oval(50, 20, 150, 80, fill = "red")
 canvas.grid(row=5, column=0, columnspan=2, padx=10, pady=10)
 
+#Content of the selection tab
+ttk.Label(tab_selection, text = "Checkbutton:").grid(row=0, column=0, padx=10, pady=10)
+check_var = tk.BooleanVar()
+ttk.Checkbutton(tab_selection, text = "Tick Me", variable = check_var).grid(row=0, column=1, padx=10, pady=10)
+
+
 
 mainWindow.mainloop()
